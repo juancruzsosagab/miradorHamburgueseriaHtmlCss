@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo-blanco.png" alt="logo-blanco">
+        <a href=""></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hamburguesas.html">Hamburguesas</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="local.html">Local</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+    </header>
+    <div>
+        <h2>Esta es mi quinta sección</h2>
+        <form action="" id="formulario">
+            <fieldset>
+                <legend>Formulario</legend>
+                <h3> Dejanos tu consulta o sugerencia!</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" value="Tu nombre" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" value="Tu Email">
+                <br>
+                <label for="select-tipo">Tipo de mensaje</label>
+                <select id="select-tipo">
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+                <br>
+                <label for="consulta">Consulta o sugerencia</label>
+                <textarea name="consulta" form="formulario" id="consulta" cols="30"
+                    rows="10">Tu consulta o sugerencia</textarea>
+                <br>
+                <div>Acepto términos y condiciones</div>
+                <input type="checkbox" name="aceptar" value="1" required>
+                <br>
+                <input type="submit" id="btn-consulta" value="Enviar Consulta!">
+                <input type="reset" id="btn-borrar-consulta" value="Borrar Consulta!">
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <img src="./img/logo-naranja.png" alt="logo-naranja">
+    </footer>
+</body>
+
+</html>
