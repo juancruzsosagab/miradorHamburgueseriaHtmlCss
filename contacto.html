@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo-blanco.png" alt="logo-blanco">
-        <a href=""></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hamburguesas.html">Hamburguesas</a></li>
-            <li><a href="menu.html">Menú</a></li>
-            <li><a href="local.html">Local</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>
-        </ul>
-    </header>
+	<header>
+		<ul>
+			<li><img src="./img/logo-blanco.png" alt="logo-blanco" class="img-logo"></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="hamburguesas.html">Hamburguesas</a></li>
+			<li><a href="menu.html">Menú</a></li>
+			<li><a href="local.html">Local</a></li>
+			<li><a href="contacto.html">Contactanos</a></li>
+		</ul>
+	</header>
+
     <div>
         <h2>Esta es mi quinta sección</h2>
         <form action="" id="formulario">
@@ -28,10 +28,10 @@
                 <legend>Formulario</legend>
                 <h3> Dejanos tu consulta o sugerencia!</h3>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" value="Tu nombre" required>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
                 <br>
                 <label for="email">Email</label>
-                <input type="email" id="email" value="Tu Email">
+                <input type="email" id="email" placeholder="Tu Email">
                 <br>
                 <label for="select-tipo">Tipo de mensaje</label>
                 <select id="select-tipo">
@@ -41,7 +41,7 @@
                 <br>
                 <label for="consulta">Consulta o sugerencia</label>
                 <textarea name="consulta" form="formulario" id="consulta" cols="30"
-                    rows="10">Tu consulta o sugerencia</textarea>
+                rows="10" placeholder="Tu consulta o sugerencia"></textarea>
                 <br>
                 <div>Acepto términos y condiciones</div>
                 <input type="checkbox" name="aceptar" value="1" required>
@@ -52,9 +52,10 @@
         </form>
     </div>
 
-    <footer>
-        <img src="./img/logo-naranja.png" alt="logo-naranja">
-    </footer>
+	<footer>
+		<img src="./img/logo-naranja.png" alt="logo-naranja" class="img-logo">
+	</footer>
+
 </body>
 
 </html>
