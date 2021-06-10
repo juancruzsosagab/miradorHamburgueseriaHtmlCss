@@ -37,7 +37,7 @@ header li a:hover {
     background-color: #111;
   }
 
-.img-logo{
+ .img-logo{
     width: auto;
     height: 60px;
 }
@@ -51,6 +51,15 @@ header li a:hover {
 
 .font-orange{
   color: #ab6412 !important;
+  font-weight: bold;
+}
+
+.fondo-estrellas{
+  background-image: url("../img/fondo-menu.png");
+}
+
+.font-underline{
+  text-decoration: underline;
 }
 
 
