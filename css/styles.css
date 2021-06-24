@@ -51,12 +51,54 @@ header li a:hover {
 /* ----- footer-----*/
 footer{
   margin-top: 10px;
+  background-color: black;
 }
+
+.footer {
+  background-image: linear-gradient(to top, black, grey);
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: center;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+
+footer li {
+  display: inline-block;
+  
+}
+
+footer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footer__imgSocial{
+  display: flex;
+}
+
+.footer__imgSocial img{
+  height: 30px;
+  width: auto;
+
+}
+
 /* ----- útiles-----*/
 
 .center{
-  margin: auto;
-  text-align: center;
+ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center
 }
 
 .font-orange{
@@ -82,41 +124,82 @@ footer{
   background-size: cover;
 }*/
 
-
-#principalHome{
-  margin: 30px;
+.allSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#principalHome h1{
-  margin: 20px;
+.main__backgroundImg{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/hamburguesa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+  align-items: center;
+  justify-content: flex-end;
 }
 
-#principalHome img{
-  padding: 10px;
-  margin: 20px;
-  border: 2px solid white;
-  padding: 10px;
-  border-radius: 25px;
+h1{
+  color: #e0dfdc;
+   letter-spacing: .1em;
+  text-shadow: 
+    0 -1px 0 #fff, 
+    0 1px 0 #2e2e2e, 
+    0 2px 0 #2c2c2c, 
+    0 3px 0 #2a2a2a, 
+    0 4px 0 #282828, 
+    0 5px 0 #262626, 
+    0 6px 0 #242424, 
+    0 7px 0 #222, 
+    0 8px 0 #202020, 
+    0 9px 0 #1e1e1e, 
+    0 10px 0 #1c1c1c, 
+    0 11px 0 #1a1a1a, 
+    0 12px 0 #181818, 
+    0 13px 0 #161616, 
+    0 14px 0 #141414, 
+    0 15px 0 #121212, 
+    0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
-#principalHome p{
-  margin-top: 5px;
-  margin-bottom: 50px;
+#primaryHome{
+  height: 30vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font: bold;
 }
 
 #secondaryHome{
-  text-align: center;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
 }
 
 #secondaryHome__video{
  padding: 40px;
  border: 10px;
+ width: 40vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 #secondaryHome__text{
   padding: 40px;
   border: 10px;
+  width: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
  }
  
 
@@ -124,39 +207,77 @@ footer{
 
 #principalHamburguesas{
  margin: 20px;
- text-align: center;
+ 
+
+}
+#principalHamburguesas h2{
+  display: flex;
+  justify-content: center;
 }
 
 .hamburguesas-contenedor{
-  text-align: center;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 
 .cards {
+  width: 300px;
+  height: auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
   border-style: solid;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cards__img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px 5px 0 0;
+  width: 80%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  transition: all 2s;
+}
+
+.cards__img:hover{
+  width: 100%;
+  height: auto;
 }
 
 .cards__text {
   padding: 2px 16px;
-  line-height: 30px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards__text li{
   list-style-type: none;   
 }
 
+.cards__btn{
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  width:150px;
+  font-weight: 400;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;    
+}
 
 /* ----- styles menú -----*/
 #principalMenu{
@@ -183,6 +304,107 @@ footer{
 #principalMenu ul{
   list-style-type: none;
 }
+
+#hambur-menu{
+  width: auto;
+  height: 200px;
+}
+.menuContainter {
+  display: grid;
+  grid-template-areas: 
+  "imagen imagen imagen imagen"
+  "hamburguesas simple doble triple"
+  "hamburguesas-cheese simple-cheese doble-cheese triple-cheese"
+  "hamburguesas-americana simple-americana doble-americana triple-americana" 
+  "hamburguesas-triple simple-triple doble-triple triple-triple"
+  "info info info info";
+  grid-template-rows: 300px 50px 100px 100px 100px 200px;
+  grid-template-columns: 40% 20% 20% 20%;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.menuContainter__img {
+  grid-area: imagen;
+  justify-self: center;
+}
+
+.menuContainter__hamburguesas {
+  grid-area: hamburguesas;
+  justify-self: start;
+}
+
+.menuContainter__simple {
+  grid-area: simple;
+  
+}
+
+.menuContainter__doble {
+  grid-area: doble;
+}
+
+.menuContainter__triple {
+  grid-area: triple;
+}
+
+.menuContainter__hamburguesas-cheese {
+  grid-area: hamburguesas-cheese;
+  justify-self: start;
+}
+
+.menuContainter__simple-cheese {
+  grid-area: simple-cheese;
+}
+
+.menuContainter__doble-cheese {
+  grid-area: doble-cheese;
+}
+
+.menuContainter__triple-cheese {
+  grid-area: triple-cheese;
+}
+
+
+.menuContainter__hamburguesas-americana {
+  grid-area: hamburguesas-americana;
+  justify-self: start;
+}
+
+.menuContainter__simple-americana {
+  grid-area: simple-americana;
+}
+
+.menuContainter__doble-americana{
+  grid-area: doble-americana;
+}
+
+.menuContainter__triple-americana{
+  grid-area: triple-americana;
+}
+
+.menuContainter__hamburguesas-triple {
+  grid-area: hamburguesas-triple;
+  justify-self: start;
+}
+
+.menuContainter__simple-triple {
+  grid-area: simple-triple;
+}
+
+.menuContainter__doble-triple{
+  grid-area: doble-triple;
+}
+
+.menuContainter__triple-triple{
+  grid-area: triple-triple;
+}
+.menuContainter__info{
+  grid-area: info;
+
+}
+
+
 /* ----- styles local -----*/
 
 #principalLocal{
@@ -249,4 +471,19 @@ input[type=reset] {
 }
 #formulario div{
   margin: 10px;
+}
+
+#formulario img{
+  margin-top: 30px;
+  animation-duration: 1s;
+  animation-name: rotar;
+  animation-iteration-count: infinite;
+}
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
 }
