@@ -1,3 +1,15 @@
+/* ---- import ---- */
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
 *{
   margin: 0px;
   padding: 0px;
@@ -5,9 +17,41 @@
 
 body{
     background-color: black;
+    background-image: url("../img/fondo-menu.png");
     color:white;
     font-family: 'Rubik', sans-serif;
 }
+
+.titulos-sections{
+  width: 100%;
+}
+
+h2 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;  
+}
+
+h2:before, h2:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+h2:before {
+  margin: 9px 0 0 -110px;
+}
+
+h2:after {
+  margin: 9px 0 0 10px;
+}
+
 
 /* ----- header -----*/
 
@@ -22,7 +66,7 @@ header{
   color: white;
   box-shadow: 0px 0px 10px gray;
   padding: 1rem 0;
-  border-radius: 0.6rem;
+  border-radius: 0.2rem;
   /*alternativa al border border-radius: 0.2rem;*/
   display: flex;
   justify-content: flex-end;
@@ -71,7 +115,7 @@ header{
 
 
 
-/*footer test*/
+/* ----- footer-----*/
 
 footer{
   box-shadow: 0px 0px 10px gray; 
@@ -84,76 +128,26 @@ footer{
 .footer__list {
   background: black;
   color: white;
-  padding: 1rem 0;
+  padding: 0.2rem 0;
   /*alternativa al border border-radius: 0.2rem;*/
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer__section {
+.footer__social {
   list-style: none;
-  margin: 1rem;
+  margin: 0.2rem;
 }
 
-.footer__section a {
+.footer__social a {
   text-decoration: none;
   color: white;
 }
 
-.footer__section a:hover {
+.footer__social a:hover {
   color: orange;
 }
-
-
-
-
-/* ----- footer-----*/
-
-
-/*
-
-footer{
-  margin-top: 10px;
-  background-color: black;
-}
-
-.footer {
-  background-image: linear-gradient(to top, black, grey);
-  display: flex;
-  align-items: center;
-  height: 60px;
-  justify-content: center;
-}
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
- }
-
-footer li {
-  display: inline-block;
-  
-}
-
-footer li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.footer__imgSocial{
-  display: flex;
-}
-
-.footer__imgSocial img{
-  height: 30px;
-  width: auto;
-
-}   */
 
 /* ----- útiles-----*/
 
@@ -180,13 +174,6 @@ footer li a {
 
 /* ----- styles index -----*/
 
-/*.main__backgroundImg{
-  background-image: url("../img/hamburguesa.jpg");
-  height: 50%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 
 .allSection{
   display: flex;
@@ -203,33 +190,70 @@ footer li a {
   background-repeat: no-repeat;
   background-size: cover;  
   align-items: center;
-  justify-content: flex-end;
+  justify-content:right;
 }
 
-h1{
-  color: #e0dfdc;
-  letter-spacing: .1em;
-  text-shadow: 
-    0 -1px 0 #fff, 
-    0 1px 0 #2e2e2e, 
-    0 2px 0 #2c2c2c, 
-    0 3px 0 #2a2a2a, 
-    0 4px 0 #282828, 
-    0 5px 0 #262626, 
-    0 6px 0 #242424, 
-    0 7px 0 #222, 
-    0 8px 0 #202020, 
-    0 9px 0 #1e1e1e, 
-    0 10px 0 #1c1c1c, 
-    0 11px 0 #1a1a1a, 
-    0 12px 0 #181818, 
-    0 13px 0 #161616, 
-    0 14px 0 #141414, 
-    0 15px 0 #121212, 
-    0 22px 30px rgba(0, 0, 0, 0.9);
+.main__titles {
+  position: absolute;
+  width: 80vh;
+  text-align: center;
+  margin-right: 30px;
+}
+
+h1, h3 {
+  transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  color: #111;
+}
+
+h1 {
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 70px;
+  text-shadow: 1px 2px #e6e6d8, 3px 4px #c6a39a;
+}
+
+h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span.star {
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;  
+  position: relative;
+}
+
+h3:before, h3:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-top: 2px solid #121212;
+  border-bottom: 2px solid #121212;
+}
+
+h3:before {
+  margin: 9px 0 0 -110px;
+}
+
+h3:after {
+  margin: 9px 0 0 10px;
 }
 
 #primaryHome{
+  background: #e6e6d8 url('https://dl.dropboxusercontent.com/s/t0gu051d08sei65/bg-retro-noise.png');
+  color: #121212;
   height: 30vh;
   width: auto;
   display: flex;
@@ -238,6 +262,11 @@ h1{
   background-color: white;
   color: black;
   font: bold;
+}
+
+#primaryHome h2:before, #primaryHome h2:after{
+  border-top: 0px;
+  border-bottom: 0px;
 }
 
 #secondaryHome{
@@ -271,14 +300,15 @@ h1{
 
 #principalHamburguesas{
  margin: 20px;
- 
+ display: flex;
+ flex-direction: column;
 
 }
-#principalHamburguesas h2{
+.titulo-hamburguesas{
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
-
 .hamburguesas-contenedor{
   display: flex;
   justify-content: space-evenly;
@@ -338,6 +368,7 @@ h1{
 }
 
 /* ----- styles menú -----*/
+
 #principalMenu{
   margin: 30px;
 }
@@ -467,11 +498,20 @@ h1{
 
 #principalLocal{
   margin: 30px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #principalLocal h2{
   margin: 20px;
+}
+#principalLocal iframe{
+  margin: 20px;
+}
+#principalLocal p{
+   margin: 20px;
 }
 
 /* ----- styles contactanos -----*/

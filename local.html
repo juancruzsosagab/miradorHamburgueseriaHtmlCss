@@ -6,40 +6,49 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Local</title>
+
+	<!--CSS only -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!--Google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+	<!--Fontawesome-->
 	<script src="https://kit.fontawesome.com/7d4193cf05.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="nav__list">
-                <li class="nav__section">
-                    <a href="#"><img src="./img/logo-blanco.png" alt="logo-blanco" class="img-logo"></a>
-                </li>
-                <li class="nav__section">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="nav__section">
-                    <a href="hamburguesas.html">Hamburguesas</a>
-                </li>
-                <li class="nav__section">
-                    <a href="menu.html">Menú</a>
-                </li>
-                <li class="nav__section">
-                    <a href="local.html">Local</a>
-                </li>
-                <li class="nav__section">
-                    <a href="contacto.html">Contactanos</a>
-                </li>
-                <li class="nav__section">
-                    <button class="nav__btn">Carrito 🛒</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-	
+	<header>
+		<nav>
+			<ul class="nav__list">
+				<li class="nav__section">
+					<a href="#"><img src="./img/logo-blanco.png" alt="logo-blanco" class="img-logo"></a>
+				</li>
+				<li class="nav__section">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="nav__section">
+					<a href="hamburguesas.html">Hamburguesas</a>
+				</li>
+				<li class="nav__section">
+					<a href="menu.html">Menú</a>
+				</li>
+				<li class="nav__section">
+					<a href="local.html">Local</a>
+				</li>
+				<li class="nav__section">
+					<a href="contacto.html">Contactanos</a>
+				</li>
+				<li class="nav__section">
+					<button class="nav__btn">Carrito 🛒</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
 	<div id="principalLocal">
 		<h2>Nuestra ubicación</h2>
 		<iframe
@@ -50,32 +59,53 @@
 		</p>
 	</div>
 
+	<!-- Footer -->
+	
 	<footer>
-        <ul class="footer__list">
-            <li class="footer__section">
-                <a href="https://es-la.facebook.com/elmatoaunpoliciamotorizado/" target="_blank">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-            </li>
-            <li class="footer__section">
-                <a href="https://www.instagram.com/elmatoaunpoliciamotorizado/?hl=es-la" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            <li class="footer__section">
-                <a href="https://twitter.com/ElMato?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-            <li class="footer__section">
-                <a href="https://twitter.com/ElMato?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </li>
-        </ul>
-        <p>Designed by Juan Cruz Sosa</p>
-
+		<div>
+			<ul class="footer__list">
+				<li class="footer__social">
+					<a href="https://es-la.facebook.com/" target="_blank">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+				</li>
+				<li class="footer__social">
+					<a href="https://www.instagram.com/" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="footer__social">
+					<a href="https://twitter.com/"
+						target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="footer__social">
+					<a href="https://twitter.com/"
+						target="_blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<p>Designed by Juan Cruz Sosa</p>
+		</div>
 	</footer>
+
+	<script type="text/javascript">
+		(function () {
+			var options = {
+				whatsapp: "+54926137335", // WhatsApp number
+				call_to_action: "Envíanos un mensaje", // Call to action
+				position: "right", // Position may be 'right' or 'left'
+			};
+			var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+			s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+		})();
+	</script>
 </body>
 
 </html>
