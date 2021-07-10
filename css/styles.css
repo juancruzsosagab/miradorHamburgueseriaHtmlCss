@@ -52,65 +52,45 @@ h2:after {
 }
 
 
+
 /* ----- header -----*/
-
-header{
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 100;
-}
-
-.nav__list {
-  background: black;
+.navbar {
+  background: black !important; 
   color: white;
   box-shadow: 0px 0px 10px gray;
   padding: 1rem 0;
   border-radius: 0.2rem;
   /*alternativa al border border-radius: 0.2rem;*/
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
-
-.nav__section {
-  list-style: none;
+.navbar-brand{
+  margin-left: 2rem;
+}
+.navbar-nav:last-child{
+  color:#111;
+}
+.nav-item{
   margin-right: 2rem;
 }
 
-.nav__section a {
-  text-decoration: none;
-  color: white;
+.nav-item{
+  margin-right: 2rem;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color:orange;
 }
 
-.nav__section a:hover {
-  color: orange;
-  background-color: #111;
-}
-
-.nav__section:first-child {
-  margin-right: auto;
-  margin-left: 2rem;
+.navbar-nav:last-child .nav-item.active:last-child .nav-link:last-child,
+.navbar-nav:last-child .nav-item:hover:last-child .nav-link:last-child {
+    color:orange;
 }
 
 .nav__btn {
+  color: #111 !important;
   font-weight: bold;
   font-size: 1rem;
-  background: orange;
-  border: none;
-  outline: none;
-  border-radius: 0.2rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
 }
 
-.nav__btn:hover {
-  background: #ab6412;
-}
-
-.img-logo{
-  width: auto;
-  height: 50px;
-}
 
 
 
@@ -118,34 +98,14 @@ header{
 
 footer{
   box-shadow: 0px 0px 10px gray; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+
 }
 
-.footer__list {
-  background: black;
-  color: white;
-  padding: 0.2rem 0;
-  /*alternativa al border border-radius: 0.2rem;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__social {
-  list-style: none;
-  margin: 0.2rem;
-}
-
-.footer__social a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer__social a:hover {
-  color: #ab6412;
+.btn-social:hover {
+  background-color: #ab6412;
 }
 
 /* ----- útiles-----*/
@@ -183,7 +143,6 @@ footer{
 .main__backgroundImg{
   display: flex;
   height: 100vh;
-  width: 99vw;
   background-image: url(../img/hamburguesa.jpg);
   background-repeat: no-repeat;
   background-size: cover;  
@@ -264,12 +223,6 @@ h3:after {
 #primaryHome h2:before, #primaryHome h2:after{
   border-top: 0px;
   border-bottom: 0px;
-}
-
-#secondaryHome{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 #secondaryHome__video{
