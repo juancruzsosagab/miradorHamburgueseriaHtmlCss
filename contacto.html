@@ -22,6 +22,9 @@
 
 	<!--Fontawesome-->
 	<script src="https://kit.fontawesome.com/7d4193cf05.js" crossorigin="anonymous"></script>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -88,12 +91,31 @@
                 <div>Acepto términos y condiciones <input type="checkbox" name="aceptar" value="1" required></div>
                 <br>
                 <input type="reset" id="btn-borrar-consulta" value="Borrar Consulta!">
-                <input type="submit" id="btn-consulta" value="Enviar Consulta!">
+                <input type="submit" id="btn-consulta" value="Enviar Consulta!" data-toggle="modal" data-target="#Modal1">
                 <br>
                 <img class="principalContacto__img" src="../img/hamburguesas.png" alt="">
             </fieldset>
         </form>
     </div>
+
+
+    <!-- Modal -->    
+    <div class="modal" tabindex="-1" id="Modal1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-dark">
+            <div class="modal-header font-weight-bold">
+              <h5 class="modal-title">Email enviado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Gracias por enviar tu consulta, en breve nos contactaremos!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 	<!-- Footer -->
 
@@ -132,6 +154,16 @@
 			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 		})();
 	</script>
+
+    <script>
+        const btnConsulta = document.getElementById("btn-consulta");
+        btnConsulta.addEventListener("click", prevent)
+
+        function prevent(e){
+            e.preventDefault();
+            $(".modal").modal("show")
+        }
+    </script>
 </body>
 
 </html>

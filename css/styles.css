@@ -54,6 +54,10 @@ h2:after {
 
 
 /* ----- header -----*/
+header{
+  font-weight: bold;
+  color: white;
+}
 .navbar {
   background: black !important; 
   color: white;
@@ -121,7 +125,9 @@ footer{
   color: #ab6412 !important;
   font-weight: bold;
 }
-
+.font-black{
+  color: black !important;
+}
 .fondo-estrellas{
   background-image: url("../img/fondo-menu.png");
 }
@@ -141,13 +147,10 @@ footer{
 }
 
 .main__backgroundImg{
-  display: flex;
   height: 100vh;
   background-image: url(../img/hamburguesa.jpg);
   background-repeat: no-repeat;
   background-size: cover;  
-  align-items: center;
-  justify-content: center;
 }
 
 .main__titles {
@@ -212,12 +215,10 @@ h3:after {
   color: #121212;
   height: 30vh;
   width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
   color: black;
   font: bold;
+  text-align: center;
 }
 
 #primaryHome h2:before, #primaryHome h2:after{
